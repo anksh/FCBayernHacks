@@ -30,18 +30,16 @@ public class LeaseFragment extends Fragment {
 
 
         ArrayList<Integer> viewColors = new ArrayList<>();
-        viewColors.add(Color.BLUE);
+        viewColors.add(Color.BLACK);
         viewColors.add(Color.YELLOW);
         viewColors.add(Color.MAGENTA);
         viewColors.add(Color.RED);
-        viewColors.add(Color.BLACK);
+        viewColors.add(Color.BLUE);
 
 
         recyclerView = view.findViewById(R.id.recyclerView);
         manager = new LinearLayoutManager(
-                getActivity(),
-                LinearLayoutManager.HORIZONTAL,
-                false);
+                getActivity());
         recyclerView.setLayoutManager(manager);
 
         adapter = new MyAdapter(getContext(), viewColors);
