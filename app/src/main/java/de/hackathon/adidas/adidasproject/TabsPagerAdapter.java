@@ -1,5 +1,7 @@
 package de.hackathon.adidas.adidasproject;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,8 +17,11 @@ import android.util.Log;
 public class TabsPagerAdapter extends FragmentPagerAdapter {
     private final String TAG = "TabsPagerAdapter";
 
-    public TabsPagerAdapter(FragmentManager fm) {
+    private Activity myActivity;
+
+    public TabsPagerAdapter(FragmentManager fm, Activity activity) {
         super(fm);
+        myActivity = activity;
     }
 
     @Override
@@ -44,11 +49,11 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return Resources.getSystem().getString(R.string.buy_tab);
+                return myActivity.getApplicationContext().getString(R.string.buy_tab);
             case 1:
-                return Resources.getSystem().getString(R.string.lease_tab);
+                return myActivity.getApplicationContext().getString(R.string.lease_tab);
             case 2:
-                return Resources.getSystem().getString(R.string.sustain_tab);
+                return myActivity.getApplicationContext().getString(R.string.sustain_tab);
             default:
                 Log.e(TAG, "should never get here - not a tab");
                 return null;
