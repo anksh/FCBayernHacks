@@ -32,7 +32,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             } catch (Exception e) {
                 Log.e("SplashScreen", e.getMessage());
             }
-            Intent intent = new Intent(SplashScreenActivity.this, null);  // replace null with new Activity (tabbed one)
+            Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);  // replace null with new Activity (tabbed one)
             SplashScreenActivity.this.startActivity(intent);
             SplashScreenActivity.this.finish();
         }
