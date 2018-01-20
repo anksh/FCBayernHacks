@@ -13,11 +13,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.choice_pager);
+        ViewPager viewPager = findViewById(R.id.choice_pager);
         PagerAdapter pagerAdapter = new TabsPagerAdapter(getSupportFragmentManager(), this);
         viewPager.setAdapter(pagerAdapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.choice_layout);
+        TabLayout tabLayout = findViewById(R.id.choice_layout);
+        tabLayout.setTabTextColors(
+                getResources().getColor(R.color.white),
+                getResources().getColor(R.color.white));
+        tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.colorAccent));
         tabLayout.setupWithViewPager(viewPager);
     }
 }
