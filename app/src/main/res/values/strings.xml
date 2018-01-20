@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">adidasProject</string>
     <string name="app_title_splash">App name - add this later</string>
+    <string name="buy_tab">Buy</string>
+    <string name="lease_tab">Lease</string>
+    <string name="sustain_tab">Sustain</string>
 </resources>
