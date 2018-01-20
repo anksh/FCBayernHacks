@@ -1,5 +1,6 @@
 package de.hackathon.adidas.adidasproject;
 
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -25,4 +26,5 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.colorAccent));
         tabLayout.setupWithViewPager(viewPager);
     }
+
 }

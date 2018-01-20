@@ -4,4 +4,7 @@
     <string name="buy_tab">Buy</string>
     <string name="lease_tab">Lease</string>
     <string name="sustain_tab">Sustain</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
