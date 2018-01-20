@@ -8,44 +8,14 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/findManuallyBtn"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@color/black"
-        android:clickable="true"
-        android:text="Find manually"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="24sp"></Button>
-
-    <Button
         android:id="@+id/sustainCameraBtn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:background="@color/black"
+        android:textColor="@color/cardview_light_background"
         android:text="Scan using QR-Code"
         android:textSize="24sp"
-        android:background="@color/white"
         android:clickable="true">
     </Button>
 
-    <!--android:background="@mipmap/logo_big"-->
-    <!--<ImageButton
-        android:id="@+id/sustainCameraBtn"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        android:layout_weight="1"
-        app:srcCompat="@mipmap/logo_big">
-    </ImageButton>
-
-    <ImageButton
-        android:id="@+id/sustainSearchBtn"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="?android:selectableItemBackground"
-        android:clickable="true"
-        app:srcCompat="@mipmap/logo_big">
-    </ImageButton>-->
 </LinearLayout>
