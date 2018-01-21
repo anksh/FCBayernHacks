@@ -1,6 +1,7 @@
 package de.hackathon.adidas.adidasproject;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -29,18 +30,15 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void prepareVide(){
-
-       /* String path = "android.resource://" + getPackageName() + "/source.mp4";
-        videoView.setVideoURI(Uri.parse(path));
-        videoView.start();*/
-
-        //https://i.giphy.com/media/3ohc141pmuGI2Vkp7W/source.mp4
         Uri uri=Uri.parse("https://i.giphy.com/media/l49JUSG1JinjhobBK/source.mp4");
         videoView.setVideoURI(uri);
-        videoView.playSoundEffect(0);
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setVolume(0, 0);
+            }
+        });
         videoView.requestFocus();
-      //  videoView.start();
-
     }
     private class ActivityStarter extends Thread {
         @Override
@@ -48,7 +46,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             //prepareVide();
             videoView.start();
             try {
-                // Execute any task in background during init. BD connection etc.*
                 Thread.sleep(splashScreenDelay);
             } catch (Exception e) {
                 Log.e("SplashScreen", e.getMessage());
