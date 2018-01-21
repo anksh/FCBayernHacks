@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.VideoView;
 
 import butterknife.BindView;
@@ -23,13 +24,14 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         ButterKnife.bind(this);
-        prepareVide();
+        prepareVideo();
+        makeFullscreen();
 
         ActivityStarter starter = new ActivityStarter();
         starter.start();
     }
 
-    private void prepareVide(){
+    private void prepareVideo(){
         Uri uri=Uri.parse("https://i.giphy.com/media/l49JUSG1JinjhobBK/source.mp4");
         videoView.setVideoURI(uri);
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
@@ -54,5 +56,12 @@ public class SplashScreenActivity extends AppCompatActivity {
             SplashScreenActivity.this.startActivity(intent);
             SplashScreenActivity.this.finish();
         }
+    }
+
+    private void makeFullscreen(){
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
     }
 }
