@@ -1,8 +1,6 @@
 package de.hackathon.adidas.adidasproject;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -33,6 +31,8 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
                 return new LeaseFragment();
             case 2:
                 return new SustainFragment();
+            case 3:
+                return new FanclubFragment();
             default:
                 Log.e(TAG, "should never get here - not a tab");
                 return null;
@@ -42,7 +42,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -54,6 +54,8 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
                 return myActivity.getApplicationContext().getString(R.string.lease_tab);
             case 2:
                 return myActivity.getApplicationContext().getString(R.string.sustain_tab);
+            case 3:
+                return myActivity.getApplicationContext().getString(R.string.fanclub_tab);
             default:
                 Log.e(TAG, "should never get here - not a tab");
                 return null;
