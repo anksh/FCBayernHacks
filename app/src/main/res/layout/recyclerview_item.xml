@@ -1,55 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="20dp"
+    android:layout_margin="10dp"
+    android:baselineAligned="false"
     >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
-        android:id="@+id/nested_layout_left">
-
-        <View
-            android:id="@+id/shoe_view_left"
-            android:layout_width="50dp"
-            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/shoe_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/shoe_text_left"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
-            />
+            android:id="@+id/shoe_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="2dp" />
 
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:id="@+id/nested_layout_right">
-        <View
-            android:id="@+id/shoe_view_right"
-            android:layout_width="50dp"
-            android:layout_height="100dp" />
-
-        <TextView
-            android:id="@+id/shoe_text_right"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
-            />
-
-    </LinearLayout>
-
-
-
-</RelativeLayout>
+</LinearLayout>

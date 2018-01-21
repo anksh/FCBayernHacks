@@ -1,12 +1,10 @@
 package de.hackathon.adidas.adidasproject;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,8 +14,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-
 /**
  * Created by ankit on 1/20/18.
  */
@@ -25,7 +21,7 @@ import butterknife.BindView;
 public class LeaseFragment extends Fragment {
 
     protected RecyclerView recyclerView;
-    protected LinearLayoutManager manager;
+    protected GridLayoutManager manager;
     private MyAdapter adapter;
 
     @Nullable
@@ -34,20 +30,20 @@ public class LeaseFragment extends Fragment {
         View view = inflater.inflate(R.layout.lease_fragment, container, false);
 
 
-        ArrayList<Integer> viewColors = new ArrayList<>();
-        viewColors.add(Color.BLACK);
-        viewColors.add(Color.YELLOW);
-        viewColors.add(Color.MAGENTA);
-        viewColors.add(Color.RED);
-        viewColors.add(Color.BLUE);
-
+        ArrayList<ShoeView> data = initData();
 
         recyclerView = view.findViewById(R.id.recyclerView);
-        manager = new LinearLayoutManager(
-                getActivity());
+        manager = new GridLayoutManager(
+                getActivity(), 2);
+        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override public int getSpanSize(int position) {
+                return (position == 0) ? 2 : 1;
+            }
+        });
+
         recyclerView.setLayoutManager(manager);
 
-        adapter = new MyAdapter(getContext(), viewColors);
+        adapter = new MyAdapter(getContext(), data);
         recyclerView.setAdapter(adapter);
 
         FloatingActionButton button = view.findViewById(R.id.event_button);
@@ -66,4 +62,20 @@ public class LeaseFragment extends Fragment {
 
         return view;
     }
+
+    private ArrayList<ShoeView> initData() {
+        ArrayList<ShoeView> shoes = new ArrayList<>();
+
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+        shoes.add(new ShoeView(R.mipmap.stan_smith, R.string.app_name));
+
+        return shoes;
+    }
+
 }

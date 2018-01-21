@@ -3,16 +3,13 @@ package de.hackathon.adidas.adidasproject;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -20,84 +17,84 @@ import java.util.List;
  * Created by ankit on 1/20/18.
  */
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    private static final int TYPE_HEADER = 0;
+    private static final int TYPE_ITEM = 1;
 
 
-    private List<Integer> mViewColors = Collections.emptyList();
-//    private ItemClickListener mClickListener;
+    private List<ShoeView> mViewShoes = Collections.emptyList();
     private Context context;
 
-    // data is passed into the constructor
-    public MyAdapter(Context context, List<Integer> colors) {
-//        this.mInflater = LayoutInflater.from(context);
-        this.mViewColors = colors;
+    public MyAdapter(Context context, List<ShoeView> shoes) {
+        this.mViewShoes = shoes;
         this.context = context;
     }
 
-
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context)
-                .inflate(R.layout.recyclerview_item, parent, false);
-        return new ViewHolder(view, context);
+    public int getItemViewType(int position) {
+        if (isPositionHeader(position)) {
+            return TYPE_HEADER;
+
+        }
+
+        return TYPE_ITEM;
+    }
+
+    private boolean isPositionHeader(int position) {
+        return position == 0;
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        int color = mViewColors.get(position);
-        if (position == 0) {
-            holder.leftLayout.getLayoutParams().height = 0;
-            holder.leftLayout.getLayoutParams().width = 0;
-            RelativeLayout.LayoutParams layoutParams;
-            layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 750);
-            layoutParams.setMargins(0, 0, 0, 0);
-            holder.rightLayout.setLayoutParams(layoutParams);
-            holder.rightShoeView.getLayoutParams().height = 0;
-            holder.rightShoeView.getLayoutParams().width = 0;
-
-
-
-            holder.rightShoeText.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
-            holder.rightShoeText.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
-            holder.rightShoeText.setTextColor(context.getResources().getColor(R.color.white));
-            holder.rightShoeText.setBackgroundColor(context.getResources().getColor(R.color.black));
-            holder.rightShoeText.setText(context.getText(R.string.lease_splash));
-            holder.rightShoeText.setGravity(Gravity.CENTER);
-        } else {
-            holder.leftShoeView.setBackgroundColor(color);
-            holder.leftShoeText.setText(R.string.app_name);
-            holder.rightShoeView.setBackgroundColor(mViewColors.get(4));
-            holder.rightShoeText.setText(R.string.app_name);
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        if (viewType == TYPE_ITEM) {
+            View view = LayoutInflater.from(context)
+                    .inflate(R.layout.recyclerview_item, parent, false);
+            return new ItemViewHolder(view, context);
         }
+        else {
+            View view = LayoutInflater.from(context)
+                    .inflate(R.layout.recycler_header, parent, false);
+            return new HeaderViewHolder(view);
+        }
+    }
 
+    @Override
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+
+        if (holder instanceof ItemViewHolder) {
+            ShoeView shoe = mViewShoes.get(position);
+            ((ItemViewHolder) holder).shoeView.setImageResource(shoe.getShoeImage());
+            ((ItemViewHolder) holder).shoeText.setText(shoe.getShoeText());
+
+        }
     }
 
     @Override
     public int getItemCount() {
-        return mViewColors.size();
+        return mViewShoes.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class HeaderViewHolder extends RecyclerView.ViewHolder {
+        public View View;
 
-        public LinearLayout leftLayout;
-        public LinearLayout rightLayout;
+        public HeaderViewHolder(View itemView) {
+            super(itemView);
+            View = itemView;
+        }
+    }
 
-        public View leftShoeView;
-        public TextView leftShoeText;
-        public View rightShoeView;
-        public TextView rightShoeText;
 
+    public class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        public ImageView shoeView;
+        public TextView shoeText;
         private Context ctx;
 
-        public ViewHolder(View itemView, Context context) {
+        public ItemViewHolder(View itemView, Context context) {
             super(itemView);
-            leftLayout = itemView.findViewById(R.id.nested_layout_left);
-            rightLayout = itemView.findViewById(R.id.nested_layout_right);
-            leftShoeView = itemView.findViewById(R.id.shoe_view_left);
-            leftShoeText = itemView.findViewById(R.id.shoe_text_left);
-            rightShoeView = itemView.findViewById(R.id.shoe_view_right);
-            rightShoeText = itemView.findViewById(R.id.shoe_text_right);
-
+            shoeView = itemView.findViewById(R.id.shoe_view);
+            shoeText = itemView.findViewById(R.id.shoe_text);
             itemView.setOnClickListener(this);
             this.ctx = context;
         }
@@ -114,9 +111,5 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         }
 
     }
-
-//    public interface ItemClickListener {
-//        void
-//    }
 
 }
