@@ -47,6 +47,9 @@
     <string name="nemeziz_tango_171_description">NEMEZIZ TANGO 17.1 </string>
     <string name="nemeziz_tango_171_price">$6 / mo</string>
 
+    <string name="x_tango_description">X TANGO 17.1 </string>
+    <string name="x_tango_price">$7 / mo</string>
+
 
 </resources>
 

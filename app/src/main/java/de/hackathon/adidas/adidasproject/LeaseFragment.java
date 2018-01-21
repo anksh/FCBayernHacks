@@ -70,13 +70,13 @@ public class LeaseFragment extends Fragment {
         shoes.add(new ShoeView(R.mipmap.copa_premium, R.string.copa_premium_description, R.string.copa_premium_price));
         shoes.add(new ShoeView(R.mipmap.copa_tango, R.string.copa_tango_description, R.string.copa_tango_price));
         shoes.add(new ShoeView(R.mipmap.copa_tango_181, R.string.copa_tango_181_description, R.string.copa_tango_181_price));
-        shoes.add(new ShoeView(R.mipmap.nemeziz_tango, R.string.nemeziz_tango_description, R.string.nemeziz_tango_price));
+        shoes.add(new ShoeView(R.mipmap.predator_tango, R.string.predator_tango_description, R.string.predator_tango_price));
         shoes.add(new ShoeView(R.mipmap.nemeziz_tango_blue, R.string.nemeziz_tango_blue_description, R.string.nemeziz_tango_price));
         shoes.add(new ShoeView(R.mipmap.nemeziz_tango_171, R.string.nemeziz_tango_171_description, R.string.nemeziz_tango_171_price));
         shoes.add(new ShoeView(R.mipmap.pp_ace, R.string.pp_ace_description, R.string.pp_ace_price));
-        shoes.add(new ShoeView(R.mipmap.predator_tango, R.string.predator_tango_description, R.string.predator_tango_price));
+        shoes.add(new ShoeView(R.mipmap.nemeziz_tango, R.string.nemeziz_tango_description, R.string.nemeziz_tango_price));
         shoes.add(new ShoeView(R.mipmap.samba_millenium, R.string.samba_millenium_description, R.string.samba_millenium_price));
-        shoes.add(new ShoeView(R.mipmap.ultraboost, R.string.ultraboost_description, R.string.ultraboost_tango_price));
+        shoes.add(new ShoeView(R.mipmap.x_tango, R.string.x_tango_description, R.string.x_tango_price));
 
         return shoes;
     }
