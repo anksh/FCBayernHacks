@@ -1,8 +1,6 @@
 package de.hackathon.adidas.adidasproject;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -28,9 +26,9 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new BuyFragment();
-            case 1:
                 return new LeaseFragment();
+            case 1:
+                return new BuyFragment();
             case 2:
                 return new SustainFragment();
             default:
@@ -49,9 +47,9 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return myActivity.getApplicationContext().getString(R.string.buy_tab);
-            case 1:
                 return myActivity.getApplicationContext().getString(R.string.lease_tab);
+            case 1:
+                return myActivity.getApplicationContext().getString(R.string.buy_tab);
             case 2:
                 return myActivity.getApplicationContext().getString(R.string.sustain_tab);
             default:
