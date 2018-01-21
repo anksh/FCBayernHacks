@@ -11,5 +11,42 @@
 
     <string name="action_settings">Settings</string>
     <string name="lease_splash">Be a part of the new wave of sneakerheads.</string>
+
+    <!-- Shoe Descriptions and prices -->
+
+    <string name="copa_premium_description">COPA 18+ PREMIUM</string>
+    <string name="copa_premium_price">$13 / mo</string>
+
+    <string name="copa_tango_description">COPA TANGO 18.1</string>
+    <string name="copa_tango_price">$11 / mo</string>
+
+
+    <string name="predator_tango_description">PREDATOR TANGO 18+</string>
+    <string name="predator_tango_price">$16 / mo</string>
+
+    <string name="ultraboost_description">ACE 16+ ULTRABOOST </string>
+    <string name="ultraboost_tango_price">$16 / mo</string>
+
+    <string name="copa_super_description">COPA TANGO 18.1</string>
+    <string name="copa_super_price">$6 / mo</string>
+
+    <string name="nemeziz_tango_description">NEMEZIZ TANGO 17+ ULTRABOOST (ORANGE) </string>
+    <string name="nemeziz_tango_price">$16 / mo</string>
+    <string name="nemeziz_tango_blue_description">NEMEZIZ TANGO 17+ ULTRABOOST (BLUE) </string>
+
+    <string name="samba_millenium_description">SAMBA MILLENNIUM LEATHER</string>
+    <string name="samba_millenium_price">$6 / mo</string>
+
+    <string name="pp_ace_description">PP ACE 17+</string>
+    <string name="pp_ace_price">$15 / mo</string>
+
+
+    <string name="copa_tango_181_description">COPA TANGO 18.1 (B/W) </string>
+    <string name="copa_tango_181_price">$9 / mo</string>
+
+    <string name="nemeziz_tango_171_description">NEMEZIZ TANGO 17.1 </string>
+    <string name="nemeziz_tango_171_price">$6 / mo</string>
+
+
 </resources>
 

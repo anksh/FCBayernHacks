@@ -17,8 +17,16 @@
             android:id="@+id/shoe_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="2dp" />
+            android:gravity="start"
+            android:textStyle="bold"
+            android:paddingTop="2dp" />
+
+        <TextView
+            android:id="@+id/price_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingBottom="2dp" />
 
 
 </LinearLayout>
