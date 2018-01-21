@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,6 +19,9 @@ public class BuyFragment extends Fragment {
 
     @BindView(R.id.buy_layout_webview)
     protected WebView mWebView;
+
+    @BindView(R.id.buy_layout_webview_textView)
+    protected TextView loadingText;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,6 +51,7 @@ public class BuyFragment extends Fragment {
             public void onPageFinished(WebView view, String url)
             {
                 mWebView.setVisibility(View.VISIBLE);
+                loadingText.setVisibility(View.INVISIBLE);
                 super.onPageFinished(view, url);
             }
         });
