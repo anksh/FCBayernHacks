@@ -4,6 +4,7 @@
     <string name="buy_tab">Buy</string>
     <string name="lease_tab">Lease</string>
     <string name="sustain_tab">Sustain</string>
+    <string name="buy_page_loading">adidas store is loading...</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_sustain_details">Give us some details.</string>
