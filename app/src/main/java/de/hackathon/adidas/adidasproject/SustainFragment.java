@@ -54,7 +54,7 @@ public class SustainFragment extends Fragment {
 
 
         Intent myIntent = new Intent(getActivity(), SustainDetailsActivity.class);
-       // myIntent.putExtra("key", value); //Optional parameters
+        // myIntent.putExtra("key", value); //Optional parameters
         getActivity().startActivity(myIntent);
 
     }
