@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:horizontalSpacing="10dp"
         android:verticalSpacing="10dp"
-        android:layout_marginLeft="14dp"
         android:orientation="vertical">
 
         <TextView
@@ -23,12 +22,14 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:text="Your shoes are..."
+            android:layout_marginLeft="14dp"
             android:textAllCaps="true" />
 
         <EditText
             android:id="@+id/name_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
             android:hint="Name"
             android:inputType="textCapWords" />
 
@@ -37,61 +38,74 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginLeft="14dp"
             android:text="When did you buy these shoes ?"
             android:textAllCaps="true" />
 
-        <CheckBox
-            android:id="@+id/less_one_month_checkbox"
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="less than a month"
-            android:textSize="16sp" />
+            android:orientation="vertical"
+            android:layout_marginLeft="14dp">
 
-        <CheckBox
-            android:id="@+id/more_one_month_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="a month or more"
-            android:textSize="16sp" />
 
-        <CheckBox
-            android:id="@+id/more_three_months_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="3 months or more"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/less_one_month_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="less than a month"
+                android:textSize="16sp" />
 
-        <CheckBox
-            android:id="@+id/more_six_months_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="6 months or more"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/more_one_month_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="a month or more"
+                android:textSize="16sp" />
 
-        <CheckBox
+            <RadioButton
+                android:id="@+id/more_three_months_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="3 months or more"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/more_six_months_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="6 months or more"
+                android:textSize="16sp" />
+
+        <RadioButton
             android:id="@+id/more_twelve_months_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
             android:text="12 months or more"
             android:textSize="16sp" />
+        </RadioGroup>
+
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginLeft="14dp"
             android:text="How often did you wear the shoes ?"
             android:textAllCaps="true" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginLeft="14dp">
 
             <RadioButton
                 android:id="@+id/daily_radio_button"
@@ -120,24 +134,50 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="Are your shoes having some issues?"
+            android:layout_marginLeft="14dp"
+            android:text="Do your shoes have any tear?"
+            android:textAllCaps="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Yes_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Yes"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/No_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="No"
+            android:textSize="16sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="14dp"
+            android:text="Are there any other issues?(optional)"
             android:textAllCaps="true" />
 
         <EditText
             android:id="@+id/issues_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
             android:hint="Issues"
             android:inputType="textCapWords" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Submit"
-            />
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -147,20 +187,12 @@
             android:verticalSpacing="10dp">
 
             <Button
-                android:id="@+id/editText41"
-                android:layout_width="178dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Back" />
-
-            <Button
                 android:id="@+id/editText43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Accept" />
+                android:text="Submit" />
         </LinearLayout>
 
     </LinearLayout>
