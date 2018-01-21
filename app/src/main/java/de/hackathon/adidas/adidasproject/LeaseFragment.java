@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Created by ankit on 1/20/18.
@@ -84,6 +86,14 @@ public class LeaseFragment extends Fragment {
         shoes.add(new ShoeView(R.mipmap.alphabounce, R.string.alphabounce_description, R.string.alphabounce_price));
         shoes.add(new ShoeView(R.mipmap.nmd, R.string.nmd_description, R.string.nmd_price));
 
+        Collections.sort(shoes, new Comparator<ShoeView>() {
+            @Override
+            public int compare(ShoeView shoeView, ShoeView t1) {
+                String lhs = getContext().getString(shoeView.getShoeText());
+                String rhs = getContext().getString(t1.getShoeText());
+                return lhs.compareTo(rhs);
+            }
+        });
 
 
         return shoes;
