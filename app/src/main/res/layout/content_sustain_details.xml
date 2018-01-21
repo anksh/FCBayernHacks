@@ -5,7 +5,7 @@
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
+    android:background="@drawable/background3"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="de.hackathon.adidas.adidasproject.SustainDetailsActivity"
     tools:showIn="@layout/activity_sustain_details">
@@ -36,7 +36,8 @@
             android:hint="Name"
             android:textColor="#ffffff"
             android:textSize="18sp"
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            android:textColorHint="#757575"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,7 +64,8 @@
                 android:paddingLeft="24dp"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
-                android:text="less than a month" />
+                android:text="less than a month"
+                android:buttonTint="@color/your_color"/>
 
             <RadioButton
                 android:id="@+id/more_one_month_checkbox"
@@ -72,7 +74,8 @@
                 android:paddingLeft="24dp"
                 android:text="a month or more"
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:buttonTint="@color/your_color"/>
 
             <RadioButton
                 android:id="@+id/more_three_months_checkbox"
@@ -81,7 +84,8 @@
                 android:paddingLeft="24dp"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
-                android:text="3 months or more" />
+                android:text="3 months or more"
+                android:buttonTint="@color/your_color"/>
 
             <RadioButton
                 android:id="@+id/more_six_months_checkbox"
@@ -90,7 +94,8 @@
                 android:paddingLeft="24dp"
                 android:text="6 months or more"
                 android:textColor="#ffffff"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:buttonTint="@color/your_color"/>
 
         <RadioButton
             android:id="@+id/more_twelve_months_checkbox"
@@ -99,7 +104,8 @@
             android:paddingLeft="24dp"
             android:textColor="#ffffff"
             android:textSize="18sp"
-            android:text="12 months or more" />
+            android:text="12 months or more"
+            android:buttonTint="@color/your_color"/>
         </RadioGroup>
 
 
@@ -130,7 +136,8 @@
                 android:text="daily"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:buttonTint="@color/your_color"/>
 
             <RadioButton
                 android:id="@+id/weekly_radio_button"
@@ -139,7 +146,8 @@
                 android:text="weekly"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:buttonTint="@color/your_color"/>
 
             <RadioButton
                 android:id="@+id/monthly_radio_button"
@@ -148,7 +156,8 @@
                 android:text="monthly"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:buttonTint="@color/your_color"/>
         </RadioGroup>
 
         <TextView
@@ -177,7 +186,8 @@
             android:paddingLeft="24dp"
             android:textColor="#ffffff"
             android:textSize="18sp"
-            android:text="Yes" />
+            android:text="Yes"
+            android:buttonTint="@color/your_color"/>
 
         <RadioButton
             android:id="@+id/No_checkbox"
@@ -186,7 +196,8 @@
             android:paddingLeft="24dp"
             android:textColor="#ffffff"
             android:textSize="18sp"
-            android:text="No" />
+            android:text="No"
+            android:buttonTint="@color/your_color"/>
         </RadioGroup>
 
 
@@ -209,7 +220,8 @@
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:hint="Issues"
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            android:textColorHint="#757575"/>
 
         <LinearLayout
             android:layout_width="match_parent"
