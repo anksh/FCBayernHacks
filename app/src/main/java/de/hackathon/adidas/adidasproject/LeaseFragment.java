@@ -77,6 +77,14 @@ public class LeaseFragment extends Fragment {
         shoes.add(new ShoeView(R.mipmap.nemeziz_tango, R.string.nemeziz_tango_description, R.string.nemeziz_tango_price));
         shoes.add(new ShoeView(R.mipmap.samba_millenium, R.string.samba_millenium_description, R.string.samba_millenium_price));
         shoes.add(new ShoeView(R.mipmap.x_tango, R.string.x_tango_description, R.string.x_tango_price));
+        shoes.add(new ShoeView(R.mipmap.nemeziz_tango_white, R.string.nemeziz_tango_white_description, R.string.nemeziz_tango_price));
+        shoes.add(new ShoeView(R.mipmap.pp_171, R.string.pp_171_description, R.string.pp_171_price));
+        shoes.add(new ShoeView(R.mipmap.ultraboost, R.string.ultraboost_description, R.string.ultraboost_tango_price));
+        shoes.add(new ShoeView(R.mipmap.prophere, R.string.prophere_description, R.string.prophere_price));
+        shoes.add(new ShoeView(R.mipmap.alphabounce, R.string.alphabounce_description, R.string.alphabounce_price));
+        shoes.add(new ShoeView(R.mipmap.nmd, R.string.nmd_description, R.string.nmd_price));
+
+
 
         return shoes;
     }

@@ -34,6 +34,8 @@
     <string name="nemeziz_tango_description">NEMEZIZ TANGO 17+ ULTRABOOST (ORANGE) </string>
     <string name="nemeziz_tango_price">$16 / mo</string>
     <string name="nemeziz_tango_blue_description">NEMEZIZ TANGO 17+ ULTRABOOST (BLUE) </string>
+    <string name="nemeziz_tango_white_description">NEMEZIZ TANGO 17+ ULTRABOOST (WHITE) </string>
+
 
     <string name="samba_millenium_description">SAMBA MILLENNIUM LEATHER</string>
     <string name="samba_millenium_price">$6 / mo</string>
@@ -50,6 +52,18 @@
 
     <string name="x_tango_description">X TANGO 17.1 </string>
     <string name="x_tango_price">$7 / mo</string>
+
+    <string name="pp_171_description">PP ACE 17.1</string>
+    <string name="pp_171_price">$12 / mo</string>
+
+    <string name="prophere_description">PROPHERE</string>
+    <string name="prophere_price">$10 / mo</string>
+
+    <string name="alphabounce_description">ALPHABOUNCE BEYOND </string>
+    <string name="alphabounce_price">$10 / mo</string>
+
+    <string name="nmd_description">NMD_R2 CNY</string>
+    <string name="nmd_price">$12 / mo</string>
 
 
 </resources>
