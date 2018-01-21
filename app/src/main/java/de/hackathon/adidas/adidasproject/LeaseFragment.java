@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -52,12 +53,10 @@ public class LeaseFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CharSequence text = "Hello button!";
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(view.getContext(), text, duration);
-                toast.show();
-                Log.d("Button", "onClick");
+                LeaseChoosingDialog dialog = new LeaseChoosingDialog();
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ft.add(android.R.id.content, dialog).addToBackStack(null).commit();
             }
         });
 
