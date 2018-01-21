@@ -26,9 +26,9 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new BuyFragment();
-            case 1:
                 return new LeaseFragment();
+            case 1:
+                return new BuyFragment();
             case 2:
                 return new SustainFragment();
             case 3:
@@ -49,9 +49,9 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return myActivity.getApplicationContext().getString(R.string.buy_tab);
-            case 1:
                 return myActivity.getApplicationContext().getString(R.string.lease_tab);
+            case 1:
+                return myActivity.getApplicationContext().getString(R.string.buy_tab);
             case 2:
                 return myActivity.getApplicationContext().getString(R.string.sustain_tab);
             case 3:

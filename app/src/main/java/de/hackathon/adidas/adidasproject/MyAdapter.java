@@ -66,7 +66,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             ShoeView shoe = mViewShoes.get(position);
             ((ItemViewHolder) holder).shoeView.setImageResource(shoe.getShoeImage());
             ((ItemViewHolder) holder).shoeText.setText(shoe.getShoeText());
-
+            ((ItemViewHolder) holder).priceText.setText(shoe.getPriceText());
         }
     }
 
@@ -89,12 +89,14 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         public ImageView shoeView;
         public TextView shoeText;
+        public TextView priceText;
         private Context ctx;
 
         public ItemViewHolder(View itemView, Context context) {
             super(itemView);
             shoeView = itemView.findViewById(R.id.shoe_view);
             shoeText = itemView.findViewById(R.id.shoe_text);
+            priceText = itemView.findViewById(R.id.price_text);
             itemView.setOnClickListener(this);
             this.ctx = context;
         }
