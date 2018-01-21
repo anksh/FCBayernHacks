@@ -12,17 +12,17 @@
         android:id="@+id/recyclerViewFan"
         />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/event_button_fan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:backgroundTint="@color/fcb_blue"
-        app:elevation="10dp"
-        app:srcCompat="@mipmap/ic_event_white_24dp"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        app:layout_behavior="de.hackathon.adidas.adidasproject.ScrollFAB"
-        />
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/event_button_fan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:backgroundTint="@color/fcb_blue"-->
+        <!--app:elevation="10dp"-->
+        <!--app:srcCompat="@mipmap/ic_event_white_24dp"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="16dp"-->
+        <!--app:layout_behavior="de.hackathon.adidas.adidasproject.ScrollFAB"-->
+        <!--/>-->
 
 
 </android.support.design.widget.CoordinatorLayout>

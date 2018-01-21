@@ -69,7 +69,7 @@ public class LeaseFragment extends Fragment {
 
         shoes.add(new ShoeView(R.mipmap.copa_super, R.string.copa_super_description, R.string.copa_super_price));
         shoes.add(new ShoeView(R.mipmap.copa_premium, R.string.copa_premium_description, R.string.copa_premium_price));
-        shoes.add(new ShoeView(R.mipmap.copa_tango, R.string.copa_tango_description, R.string.copa_tango_price));
+//        shoes.add(new ShoeView(R.mipmap.copa_tango, R.string.copa_tango_description, R.string.copa_tango_price));
         shoes.add(new ShoeView(R.mipmap.copa_tango_181, R.string.copa_tango_181_description, R.string.copa_tango_181_price));
         shoes.add(new ShoeView(R.mipmap.predator_tango, R.string.predator_tango_description, R.string.predator_tango_price));
         shoes.add(new ShoeView(R.mipmap.nemeziz_tango_blue, R.string.nemeziz_tango_blue_description, R.string.nemeziz_tango_price));
@@ -83,7 +83,7 @@ public class LeaseFragment extends Fragment {
         shoes.add(new ShoeView(R.mipmap.ultraboost, R.string.ultraboost_description, R.string.ultraboost_tango_price));
         shoes.add(new ShoeView(R.mipmap.prophere, R.string.prophere_description, R.string.prophere_price));
         shoes.add(new ShoeView(R.mipmap.alphabounce, R.string.alphabounce_description, R.string.alphabounce_price));
-        shoes.add(new ShoeView(R.mipmap.nmd, R.string.nmd_description, R.string.nmd_price));
+//        shoes.add(new ShoeView(R.mipmap.nmd, R.string.nmd_description, R.string.nmd_price));
 
         Collections.sort(shoes, new Comparator<ShoeView>() {
             @Override

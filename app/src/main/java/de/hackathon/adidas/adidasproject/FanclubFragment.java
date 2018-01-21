@@ -51,18 +51,18 @@ public class FanclubFragment extends Fragment {
         adapter = new MyAdapterFanClub(getContext(), data);
         recyclerView.setAdapter(adapter);
 
-        FloatingActionButton button = view.findViewById(R.id.event_button_fan);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                CharSequence text = "Hello button!";
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(view.getContext(), text, duration);
-                toast.show();
-                Log.d("Button", "onClick");
-            }
-        });
+//        FloatingActionButton button = view.findViewById(R.id.event_button_fan);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                CharSequence text = "Hello button!";
+//                int duration = Toast.LENGTH_SHORT;
+//
+//                Toast toast = Toast.makeText(view.getContext(), text, duration);
+//                toast.show();
+//                Log.d("Button", "onClick");
+//            }
+//        });
 
         return view;
     }
