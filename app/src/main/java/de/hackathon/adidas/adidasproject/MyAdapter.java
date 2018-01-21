@@ -21,6 +21,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_ITEM = 1;
+    private static final int TYPE_FUNCLUB_ITEM = 3;
 
 
     private List<ShoeView> mViewShoes = Collections.emptyList();

@@ -7,14 +7,15 @@
     <string name="sustain_tab">Sustain</string>
     <string name="buy_page_loading">adidas store is loading...</string>
 
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_sustain_details">Give us some details.</string>
 
     <string name="action_settings">Settings</string>
     <string name="lease_splash">Be a part of the new wave of sneakerheads.</string>
+    <string name="myClub_Header_txt">The new, hip way to support your club.</string>
 
     <!-- Shoe Descriptions and prices -->
-
     <string name="copa_premium_description">COPA 18+ PREMIUM</string>
     <string name="copa_premium_price">$13 / mo</string>
 
@@ -50,6 +51,34 @@
 
     <string name="x_tango_description">X TANGO 17.1 </string>
     <string name="x_tango_price">$7 / mo</string>
+
+    <!--FANCLUB DATA-->
+    <string name="fcbshoe_descirption">RAPIDATURF FC BAYERN MUNICH </string>
+    <string name="fcbshoe_price">$7 / mo</string>
+    <string name="fcbshoe2_descirption">ACE 17.1 FIRM GROUND </string>
+    <string name="fcbshoe2_price">$7 / mo</string>
+    <string name="fcbshoe3_descirption">ACE 17.3 PRIMEMESH </string>
+    <string name="fcbshoe3_price">$7 / mo</string>
+    <string name="fcbshoe4_descirption">MESSI 16.3 FIRM GROUND </string>
+    <string name="fcbshoe4_price">$7 / mo</string>
+    <string name="fcbshoe5_descirption">MESSI 16.1 FIRM GROUND </string>
+    <string name="fcbshoe5_price">$7 / mo</string>
+    <string name="shirt1_descirption">UCL BAYERN MONACHIUM LONG </string>
+    <string name="shirt1_price">$7 / mo</string>
+    <string name="shirt2_descirption">UCL BAYERN MONACHIUM WHITE </string>
+    <string name="shirt2_price">$7 / mo</string>
+    <string name="shirt3_descirption">BAYERN MONACHIUM MATCH</string>
+    <string name="shirt3_price">$7 / mo</string>
+    <string name="shirt4_descirption">BAYERN MONACHIUM 2nd </string>
+    <string name="shirt4_price">$7 / mo</string>
+    <string name="kurtka_descirption">FC BAYERN MÜNCHEN WINDBREAKER </string>
+    <string name="kurtka_price">$7 / mo</string>
+    <string name="bluza_descirption">BAYERN MONACHIUM HOODIE </string>
+    <string name="bluza_price">$7 / mo</string>
+    <string name="short1_descirption">UCL BAYERN MONACHIUM </string>
+    <string name="short1_price">$7 / mo</string>
+    <string name="kalesony_descirption">UCL BAYERN MONACHIUM LONG </string>
+    <string name="kalesony_price">$7 / mo</string>
 
 
 </resources>
