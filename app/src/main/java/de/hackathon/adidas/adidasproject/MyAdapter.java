@@ -1,6 +1,7 @@
 package de.hackathon.adidas.adidasproject;
 
 import android.content.Context;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -105,12 +106,16 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         @Override
         public void onClick(View view) {
-            CharSequence text = "Hello toast!";
-            int duration = Toast.LENGTH_SHORT;
+            Snackbar snackbar = Snackbar
+                    .make(view, "Added to cart", Snackbar.LENGTH_SHORT)
+                    .setAction("UNDO", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
 
-            Toast toast = Toast.makeText(ctx, text, duration);
-            toast.show();
-            Log.d("View Item", "onClick");
+                        }
+                    });
+
+            snackbar.show();
         }
 
     }

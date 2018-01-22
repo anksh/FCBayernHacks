@@ -53,10 +53,10 @@ public class LeaseFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LeaseChoosingDialog dialog = new LeaseChoosingDialog();
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-                ft.add(android.R.id.content, dialog).addToBackStack(null).commit();
+//                LeaseChoosingDialog dialog = new LeaseChoosingDialog();
+//                FragmentTransaction ft = getFragmentManager().beginTransaction();
+//                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+//                ft.add(android.R.id.content, dialog).addToBackStack(null).commit();
             }
         });
 
