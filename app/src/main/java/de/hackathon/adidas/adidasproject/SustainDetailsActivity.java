@@ -14,7 +14,7 @@ public class SustainDetailsActivity extends AppCompatActivity {
     @OnClick(R.id.editText43)
     protected void showSnackbarOnClickSubmit(){
         Snackbar snackbar = Snackbar
-                .make(findViewById(R.id.mainActivityPage), "Submitted! Check your email for details", Snackbar.LENGTH_SHORT)
+                .make(findViewById(R.id.nestedScrollView), "Submitted! Check your email for details", Snackbar.LENGTH_SHORT)
                 .setAction("UNDO", new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
