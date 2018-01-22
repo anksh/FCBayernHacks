@@ -1,5 +1,6 @@
 package de.hackathon.adidas.adidasproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -23,14 +24,16 @@ public class SustainDetailsActivity extends AppCompatActivity {
                 });
 
         snackbar.show();
-      //  redirectToHomePage();
+        redirectToHomePage();
     }
 
-    /*private void redirectToHomePage(){
-        FragmentManager fm = getSupportFragmentManager();
-        Fragment fragment = new LeaseFragment();
-        fm.beginTransaction().add(R.id.sus,fragment).commit();
-    }*/
+    private void redirectToHomePage(){
+        Intent myIntent = new Intent(this, MainActivity.class);
+        // myIntent.putExtra("key", value); //Optional parameters
+        SustainDetailsActivity.this.startActivity(myIntent);
+        SustainDetailsActivity.this.finish();
+        //ONLY FOR TESTS!!!!!!!!!!!!!!!!!!!!!*/
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
