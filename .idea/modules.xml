@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://C:\Users\bystr\AndroidStudioProjects\adidasProject\FCBayernHacks.iml" filepath="C:\Users\bystr\AndroidStudioProjects\adidasProject\FCBayernHacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/adidasProject.iml" filepath="$PROJECT_DIR$/adidasProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

@@ -1,3 +1,98 @@
 <resources>
     <string name="app_name">adidasProject</string>
+    <string name="app_title_splash">App name - add this later</string>
+    <string name="buy_tab">Buy</string>
+    <string name="lease_tab">Lease</string>
+    <string name="fanclub_tab">My club</string>
+    <string name="sustain_tab">Sustain</string>
+    <string name="buy_page_loading">adidas store is loading...</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_sustain_details">Give us some details.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="lease_splash">Be a part of the new wave of sneakerheads.</string>
+    <string name="myClub_Header_txt">The new, hip way to support your club.</string>
+
+    <!-- Shoe Descriptions and prices -->
+    <string name="copa_premium_description">COPA 18+ PREMIUM</string>
+    <string name="copa_premium_price">$13 / mo</string>
+
+    <string name="copa_tango_description">COPA TANGO 18.1</string>
+    <string name="copa_tango_price">$11 / mo</string>
+
+
+    <string name="predator_tango_description">PREDATOR TANGO 18+</string>
+    <string name="predator_tango_price">$16 / mo</string>
+
+    <string name="ultraboost_description">ACE 16+ ULTRABOOST </string>
+    <string name="ultraboost_tango_price">$16 / mo</string>
+
+    <string name="copa_super_description">COPA TANGO 18.1</string>
+    <string name="copa_super_price">$6 / mo</string>
+
+    <string name="nemeziz_tango_description">NEMEZIZ TANGO 17+ ULTRABOOST (ORANGE) </string>
+    <string name="nemeziz_tango_price">$16 / mo</string>
+    <string name="nemeziz_tango_blue_description">NEMEZIZ TANGO 17+ ULTRABOOST (BLUE) </string>
+    <string name="nemeziz_tango_white_description">NEMEZIZ TANGO 17+ ULTRABOOST (WHITE) </string>
+
+
+    <string name="samba_millenium_description">SAMBA MILLENNIUM LEATHER</string>
+    <string name="samba_millenium_price">$6 / mo</string>
+
+    <string name="pp_ace_description">PP ACE 17+</string>
+    <string name="pp_ace_price">$15 / mo</string>
+
+
+    <string name="copa_tango_181_description">COPA TANGO 18.1 (B/W) </string>
+    <string name="copa_tango_181_price">$9 / mo</string>
+
+    <string name="nemeziz_tango_171_description">NEMEZIZ TANGO 17.1 </string>
+    <string name="nemeziz_tango_171_price">$6 / mo</string>
+
+    <string name="x_tango_description">X TANGO 17.1 </string>
+    <string name="x_tango_price">$7 / mo</string>
+
+    <!--FANCLUB DATA-->
+    <string name="fcbshoe_descirption">RAPIDATURF FC BAYERN MUNICH </string>
+    <string name="fcbshoe_price">$7 / mo</string>
+    <string name="fcbshoe2_descirption">ACE 17.1 FIRM GROUND </string>
+    <string name="fcbshoe2_price">$7 / mo</string>
+    <string name="fcbshoe3_descirption">ACE 17.3 PRIMEMESH </string>
+    <string name="fcbshoe3_price">$7 / mo</string>
+    <string name="fcbshoe4_descirption">MESSI 16.3 FIRM GROUND </string>
+    <string name="fcbshoe4_price">$7 / mo</string>
+    <string name="fcbshoe5_descirption">MESSI 16.1 FIRM GROUND </string>
+    <string name="fcbshoe5_price">$7 / mo</string>
+    <string name="shirt1_descirption">UCL BAYERN MONACHIUM LONG </string>
+    <string name="shirt1_price">$7 / mo</string>
+    <string name="shirt2_descirption">UCL BAYERN MONACHIUM WHITE </string>
+    <string name="shirt2_price">$7 / mo</string>
+    <string name="shirt3_descirption">BAYERN MONACHIUM MATCH</string>
+    <string name="shirt3_price">$7 / mo</string>
+    <string name="shirt4_descirption">BAYERN MONACHIUM 2nd </string>
+    <string name="shirt4_price">$7 / mo</string>
+    <string name="kurtka_descirption">FC BAYERN MÜNCHEN WINDBREAKER </string>
+    <string name="kurtka_price">$7 / mo</string>
+    <string name="bluza_descirption">BAYERN MONACHIUM HOODIE </string>
+    <string name="bluza_price">$7 / mo</string>
+    <string name="short1_descirption">UCL BAYERN MONACHIUM </string>
+    <string name="short1_price">$7 / mo</string>
+    <string name="kalesony_descirption">UCL BAYERN MONACHIUM LONG </string>
+    <string name="kalesony_price">$7 / mo</string>
+
+    <string name="pp_171_description">PP ACE 17.1</string>
+    <string name="pp_171_price">$12 / mo</string>
+
+    <string name="prophere_description">PROPHERE</string>
+    <string name="prophere_price">$10 / mo</string>
+
+    <string name="alphabounce_description">ALPHABOUNCE BEYOND </string>
+    <string name="alphabounce_price">$10 / mo</string>
+
+    <string name="nmd_description">NMD_R2 CNY</string>
+    <string name="nmd_price">$12 / mo</string>
+
 </resources>
+
